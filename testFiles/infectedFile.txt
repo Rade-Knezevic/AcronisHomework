@@ -1,0 +1,1 @@
+Let's assume that this file contains some virus.
