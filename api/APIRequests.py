@@ -20,8 +20,8 @@ class APIRequests:
         response = requests.get(url)
         return response
 
-    def get_quarantine(self):
-        url = f"{self.base_url}/quarantine/quarantine"
+    def retrieve_from_quarantine(self, file_id):
+        url = f"{self.base_url}/quarantine/quarantine?file_id={file_id}"
         response = requests.get(url)
         return response
 
