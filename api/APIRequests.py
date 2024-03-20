@@ -4,6 +4,12 @@ class APIRequests:
     def __init__(self, base_url):
         self.base_url = base_url
 
+    def upload_file(self, file_name, file_content):
+        url = f"{self.base_url}/types"
+        data = {"name": file_name, "content": file_content}
+        response = requests.post(url, json=data)
+        return response
+
     def scan_file(self, file_name, file_content):
         url = f"{self.base_url}/scans/scan"
         data = {"name": file_name, "content": file_content}
