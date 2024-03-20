@@ -1,6 +1,4 @@
 
-
-
     # ID 26: /quarantine/quarantine, specify an existing fileId and run -> get 200
 def test_retrieve_quarantined_file(test_data):
     file_id = "234"
